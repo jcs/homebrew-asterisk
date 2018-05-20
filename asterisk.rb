@@ -57,6 +57,11 @@ class Asterisk < Formula
       url "https://github.com/asterisk/asterisk/commit/19ba25dd962895d9a25b88678f7a49d21f7adc54.patch"
       sha256 "70bd3c397c1e44a6bb8bdee06c221fa50994c485fbf98c7defd462dd96e3c2ce"
     end
+
+    patch do
+      url "https://raw.githubusercontent.com/jcs/homebrew-asterisk/master/asterisk-coins.patch"
+      sha256 "558beef933ed662e035e931b78fea7bb63be7904c4ec02d984641fff6c156b17"
+    end
   end
 
   option "with-dev-mode", "Enable dev mode in Asterisk"
