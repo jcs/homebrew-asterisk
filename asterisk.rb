@@ -107,7 +107,7 @@ class Asterisk < Formula
 Create "asterisk" user and group (sharing only) from System Preferences,
 then update permissions on directories asterisk writes to:
 
-sudo chown -R asterisk:asterisk /usr/local/var/{spool,run,log}/asterisk
+sudo chown -R asterisk:asterisk /usr/local/var/{lib,spool,run,log}/asterisk
 
 When starting service, make sure to start it as root:
 
