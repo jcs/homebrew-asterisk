@@ -1,7 +1,6 @@
 ## Installation
 
-    xcode-select --install
-    brew tap jcs/homebrew-asterisk
+    brew tap jcs/homebrew-asterisk-lts
     brew install asterisk
 
 Create `asterisk` user (sharing only) and group in System Preferences.
