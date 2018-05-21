@@ -200,6 +200,10 @@ class Asterisk < Formula
 
     # Replace Cellar references to opt/asterisk
     system "sed", "-i", "", "s#Cellar/asterisk/[^/]*/#opt/asterisk/#", "#{etc}/asterisk/asterisk.conf"
+
+    # Run as asterisk:asterisk by default
+    system "sed", "-i", "", "s#^;runuser =.*#runuser = asterisk#", "#{etc}/asterisk/asterisk.conf"
+    system "sed", "-i", "", "s#^;rungroup =.*#rungroup = asterisk#", "#{etc}/asterisk/asterisk.conf"
   end
 
   plist_options :startup => false, :manual => "asterisk -r"
